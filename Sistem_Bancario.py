@@ -51,11 +51,11 @@ while opcao != 6:
     if opcao == 2:
 
         print('----Entrar Na Conta----')
-        nome_login = (input('digite o Nome da Conta: ')).strip()
+        nome_login = (input('digite o Nome da Conta: '))
         senha_login = (input('Digite sua Senha: '))
 
         for conta in contas:
-            if nome_login.lower == conta.nome.lower and senha_login == conta.senha:
+            if nome_login == conta.nome and senha_login == conta.senha:
                 logado = True
                 conta_logada = conta
                 break
